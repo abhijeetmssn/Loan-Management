@@ -1,13 +1,22 @@
+<!-- Name=Himanshi
+    Student Number=
+-->
 <!DOCTYPE html>
 <html>
-
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css ">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Himanshi</title>
+</head>
 <body>
     <script src="js/script.js">
     </script>
     <h1>Apply For Loan</h1>
 
-    <form action="">
-        <label for="fname">Company Name:</label>
+    <form action="" class="col-sm-10"  novalidate>
+        <label for="fname" required>Company Name:</label>
         <input type="text" id="cName" name="cName"><br><br>
         <label for="lname">Company Owner:</label>
         <input type="text" id="cOwner" name="cOwner"><br><br>
@@ -21,9 +30,11 @@
         <input type="text" id="borrowAmount" name="borrowAmount"><br><br>
         <label for="lname">Payment Terms (number):</label>
         <input type="number" id="paymentTerms" name="paymentTerms"><br><br>
-        <input type="button" value="Submit" onclick="storeLoanData()">
+        <input type="button" value="Submit" onclick="storeLoanData()" class="btn btn-primary">
     </form>
-
+    <script>
+        bootstrapValidate('#pNumber','max:10:please do not enter more than 10 character')
+    </script>
 </body>
 
 </html>

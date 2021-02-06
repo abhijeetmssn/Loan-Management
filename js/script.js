@@ -16,7 +16,34 @@ storeLoanData = () => {
         borrowAmount: borrowAmount,
         paymentTerms: paymentTerms
     }
-
+    if (companyName == "") {
+        alert(" Company Name must be filled out");
+        return false;
+         }
+    if (companyOwner == "") {
+        alert(" Company Owner must be filled out");
+        return false;
+        } 
+    if (emailAddress == "") {
+        alert(" Email Address must be filled out");
+        return false;
+        }
+//     if (phoneNum.length > 6 && phoneNum.length < 11) {
+//             alert(" Invalid");
+//             return false;
+//              }
+//    if (annualSale == "") {
+//             alert(" Annual Sale must be filled out");
+//             return false;
+//             } 
+//     if (borrowAmount > '100') {
+//             alert(" Borrow Amount must be Greater than 100$");
+//             return false;
+//             }   
+//     if (paymentTerms >5 ) {
+//                 alert(" Payment terms must be grater than 5 Months");
+//                 return false;
+//                 }             
     localStorage.setItem("loanData", JSON.stringify((loanObject)));
 
     if(true) {
@@ -59,10 +86,18 @@ storeAllLoanData = () => {
     }
 
     localStorage.setItem("loanData", JSON.stringify((updateLoadObj)));
-
     let message = "";
     if(decision === "Accept") {
         message = "Accpeted Successfully"
+        document.getElementById("finalMessage").innerHTML = message.fontcolor('green');
+    }else if(decision === "Reject"){
+        message = "Your Application is Rejected";
+        document.getElementById("finalMessage").innerHTML = message.fontcolor('red');
+    }else if(decision ==="moreInfo")
+    {
+        message = "You need some extra Information";
+        document.getElementById("finalMessage").innerHTML = message.fontcolor('yellow');
     }
-    document.getElementById("finalMessage").innerHTML = message;
+    
+
 }
