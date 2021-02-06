@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    </script>
+    <h1>Loan Approval</h1>
+    <p>
+        <span >Company Name:</span>
+        <span id="cName"></span><br><br>
+        <span >Company Owner:</span>
+        <span id="cOwner"></span><br><br>
+        <span >Company Email:</span>
+        <span id="email"></span><br><br>
+        <span >Borrow Amount:</span>
+        <span id="borrowAmount"></span><br><br>
+        <span >Payment Terms:</span>
+        <span id="paymentTerms"></span><br><br>
+
+        <span >Interest:</span>
+        <span id="interest"></span><br><br>
+
+        <span >Payment:</span>
+        <span id="payment"></span><br><br>
+
+        <span >Profit:</span>
+        <span id="profit"></span><br><br>
+        
+        <label for="decision">Decision :</label>
+        <select name="decision" onchange="storeDecision()" id="decision">
+            <option value=""></option>
+            <option value="Accept">Accept</option>
+            <option value="Reject">Reject</option>
+            <option value="moreInfo">Need more Information</option>
+        </select>
+
+        <input type="button" value="submit" onclick="storeAllLoanData()">
+        <p id="finalMessage"></p>
+    </p>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
