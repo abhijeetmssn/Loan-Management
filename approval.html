@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="css/style.css ">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style1.css ">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
 <body>
     <body style="background-image:url(images/bg.png); background-size: 200% 330%;"></div>
     <h1>Loan Approval</h1>
-    <p>
-        <span >Company Name:</span>
+    <p class="main">
+        <span  class="cname">Company Name:</span>
         <span id="cName"></span><br><br>
-        <span >Company Owner:</span>
+        <span class="cowner">Company Owner:</span>
         <span id="cOwner"></span><br><br>
-        <span >Company Email:</span>
+        <span class="email">Company Email:</span>
         <span id="email"></span><br><br>
-        <span >Borrow Amount:</span>
+        <span class="borrowamount">Borrow Amount:</span>
         <span id="borrowAmount"></span><br><br>
-        <span >Payment Terms:</span>
+        <span class="terms">Payment Terms:</span>
         <span id="paymentTerms"></span><br><br>
 
-        <span >Interest:</span>
+        <span class="interest">Interest:</span>
         <span id="interest"></span><br><br>
 
-        <span >Payment:</span>
+        <span class="payment">Payment:</span>
         <span id="payment"></span><br><br>
 
-        <span >Profit:</span>
+        <span class="profit">Profit:</span>
         <span id="profit"></span><br><br>
         
-        <label for="decision">Decision :</label>
+        <label for="decision" class="decision">Decision :</label>
         <select name="decision" onchange="storeDecision()" id="decision">
             <option value=""></option>
             <option value="Accept">Accept</option>
@@ -33,8 +38,8 @@
             <option value="moreInfo">Need more Information</option>
         </select>
 
-        <input type="button" value="submit" onclick="storeAllLoanData()">
-        <p id="finalMessage" ></p>
+        <input type="button" value="submit" onclick="storeAllLoanData()" class="btn btn-primary btn-lg">
+        <p id="finalMessage"  class="finalmessage"></p>
     </p>
     <script src="js/script.js"></script>
 </body>

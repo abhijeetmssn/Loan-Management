@@ -13,13 +13,11 @@
 </head>
 <body style="background-image:url(images/bg.png); background-size: 200% 330%;"></div>
     
-    <div class="image">
-    <script src="js/script.js">
-    </script>
+    <script src="js/script.js"></script>
     <h1>Apply For Loan</h1>
 
     <form action="" class="main">
-        <label for="fname" required>Company Name:</label>
+        <label for="fname" >Company Name:</label>
         <input type="text" id="cName" name="cName" class="cname"><br><br>
         <label for="lname">Company Owner:</label>
         <input type="text" id="cOwner" name="cOwner" class="cowner"><br><br>
@@ -33,7 +31,7 @@
         <input type="text" id="borrowAmount" name="borrowAmount" class="borrowamount"><br><br>
         <label for="lname">Payment Terms (number):</label>
         <input type="number" id="paymentTerms" name="paymentTerms" class="terms"><br><br>
-        <input type="button" value="Submit" onclick="storeLoanData()" class="btn btn-primary">
+        <input type="button" value="Submit" onclick="storeLoanData()" class="btn btn-primary btn-lg">
     </form>
 
 

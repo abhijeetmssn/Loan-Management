@@ -1,0 +1,93 @@
+h1{
+    width: 800px;
+    background-color:rgb(0,0,0,0.6);
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.main{
+    position: relative;
+    background-color: rgb(0,0,0,0.4);
+    text-align: center;
+    width: 800px;
+    font-size: large;
+    color: white;
+    padding-top: 10px;
+    margin: auto;
+    height: max-content;
+    height: 540px;
+    
+}
+
+.cname{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.cowner{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.email{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.borrowamount{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.terms{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.interest{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.payment{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.profit{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.decision{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+  
+}
+
+span{
+    position: relative;
+    width: 240px;
+    display: inline-flex;
+    font-weight: bold;
+}
+
+.finalmessage{
+    display: inline-flex;
+}
+
+option{
+    color: black;
+}
