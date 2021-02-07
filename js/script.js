@@ -16,18 +16,18 @@ storeLoanData = () => {
         borrowAmount: borrowAmount,
         paymentTerms: paymentTerms
     }
-    if (companyName == "") {
-        alert(" Company Name must be filled out");
-        return false;
-         }
-    if (companyOwner == "") {
-        alert(" Company Owner must be filled out");
-        return false;
-        } 
-    if (emailAddress == "") {
-        alert(" Email Address must be filled out");
-        return false;
-        }
+    // if (companyName == "") {
+    //     alert(" Company Name must be filled out");
+    //     return false;
+    //      }
+    // if (companyOwner == "") {
+    //     alert(" Company Owner must be filled out");
+    //     return false;
+    //     } 
+    // if (emailAddress == "") {
+    //     alert(" Email Address must be filled out");
+    //     return false;
+    //     }
 //     if (phoneNum.length > 6 && phoneNum.length < 11) {
 //             alert(" Invalid");
 //             return false;

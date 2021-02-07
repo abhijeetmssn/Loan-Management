@@ -4,37 +4,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css ">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Himanshi</title>
 </head>
-<body>
+<body style="background-image:url(images/bg.png); background-size: 200% 330%;"></div>
+    
+    <div class="image">
     <script src="js/script.js">
     </script>
     <h1>Apply For Loan</h1>
 
-    <form action="" class="col-sm-10"  novalidate>
+    <form action="" class="main">
         <label for="fname" required>Company Name:</label>
-        <input type="text" id="cName" name="cName"><br><br>
+        <input type="text" id="cName" name="cName" class="cname"><br><br>
         <label for="lname">Company Owner:</label>
-        <input type="text" id="cOwner" name="cOwner"><br><br>
+        <input type="text" id="cOwner" name="cOwner" class="cowner"><br><br>
         <label for="lname">Email Address:</label>
-        <input type="text" id="email" name="email"><br><br>
+        <input type="text" id="email" name="email" class="email"><br><br>
         <label for="lname">Phone Number:</label>
-        <input type="number" id="pNumber" name="pNumber"><br><br>
+        <input type="number" id="pNumber" name="pNumber" class="phnumber"><br><br>
         <label for="lname">Annual Sale in $:</label>
-        <input type="number" id="annualSale" name="annualSale"><br><br>
+        <input type="number" id="annualSale" name="annualSale" class="annualsale"><br><br>
         <label for="lname">Borrow Amount in $:</label>
-        <input type="text" id="borrowAmount" name="borrowAmount"><br><br>
+        <input type="text" id="borrowAmount" name="borrowAmount" class="borrowamount"><br><br>
         <label for="lname">Payment Terms (number):</label>
-        <input type="number" id="paymentTerms" name="paymentTerms"><br><br>
+        <input type="number" id="paymentTerms" name="paymentTerms" class="terms"><br><br>
         <input type="button" value="Submit" onclick="storeLoanData()" class="btn btn-primary">
     </form>
-    <script>
-        bootstrapValidate('#pNumber','max:10:please do not enter more than 10 character')
-    </script>
+
+
 </body>
 
 </html>
