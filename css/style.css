@@ -7,8 +7,6 @@ label{
     width: 240px;
     display: inline-block;
     font-weight: bold;
-    text-align: justify;
-    margin-left: 20px;
 }
 
 .main{
@@ -16,10 +14,12 @@ label{
     background-color: rgb(0,0,0,0.4);
     text-align: center;
     width: 800px;
-    font-size: 15px;
+    font-size: large;
     color: white;
     padding-top: 10px;
     margin: auto;
+    
+
 }
 
 h1{
@@ -63,8 +63,4 @@ h1{
 .terms{
     font-size: larger;
     color: black;
-}
-
-.submit-button {
-  margin-top: 10px;
 }

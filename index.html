@@ -14,72 +14,28 @@
 <body style="background-image:url(images/bg.png); background-size: 200% 330%;"></div>
     
     <div class="image">
-    <h1>Apply For Loan</h1>
-    <form action="" class="main form-group">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 float-right">
-            <label for="fname" required>Company Name:</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" id="cName" name="cName" class="cname form-control">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 float-right">
-            <label for="lname">Company Owner:</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" id="cOwner" name="cOwner" class="cowner form-control">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 float-right">
-            <label for="lname">Email Address:</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" id="email" name="email" class="email form-control">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 float-right">
-            <label for="lname">Phone Number:</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="number" id="pNumber" name="pNumber" class="phnumber form-control">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 float-right">
-            <label for="lname">Annual Sale in $:</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="number" id="annualSale" name="annualSale" class="annualsale form-control">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 float-right">
-            <label for="lname">Borrow Amount in $:</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" id="borrowAmount" name="borrowAmount" class="borrowamount form-control">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 float-right">
-            <label for="lname">Payment Terms (number):</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="number" id="paymentTerms" name="paymentTerms" class="terms form-control">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md col-sm col-xs submit-button">
-            <input type="button" value="Submit" onclick="storeLoanData()" class="btn btn-primary btn-lg">
-          </div>
-        </div>
-    </form>
     <script src="js/script.js">
     </script>
+    <h1>Apply For Loan</h1>
+
+    <form action="" class="main">
+        <label for="fname" required>Company Name:</label>
+        <input type="text" id="cName" name="cName" class="cname"><br><br>
+        <label for="lname">Company Owner:</label>
+        <input type="text" id="cOwner" name="cOwner" class="cowner"><br><br>
+        <label for="lname">Email Address:</label>
+        <input type="text" id="email" name="email" class="email"><br><br>
+        <label for="lname">Phone Number:</label>
+        <input type="number" id="pNumber" name="pNumber" class="phnumber"><br><br>
+        <label for="lname">Annual Sale in $:</label>
+        <input type="number" id="annualSale" name="annualSale" class="annualsale"><br><br>
+        <label for="lname">Borrow Amount in $:</label>
+        <input type="text" id="borrowAmount" name="borrowAmount" class="borrowamount"><br><br>
+        <label for="lname">Payment Terms (number):</label>
+        <input type="number" id="paymentTerms" name="paymentTerms" class="terms"><br><br>
+        <input type="button" value="Submit" onclick="storeLoanData()" class="btn btn-primary">
+    </form>
+
 
 </body>
 
