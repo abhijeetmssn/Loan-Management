@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style1.css ">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
 <body>
     <body style="background-image:url(images/bg.png); background-size: 200% 330%;"></div>
-    <h1>Loan Approval</h1>
-    <p class="main">
+        <div class="header">
+            <h1>Apply For Loan</h1>
+            <h3>Assignment 1</h3>
+            <h3>Himanshi </h3>
+            <h3>Student id: 991592167</h3>
+            <img src="images/pic.jpg" alt="Trulli" width="150" height="150">
+        </div>
+    <div class="main">
         <span  class="cname">Company Name:</span>
         <span id="cName"></span><br><br>
         <span class="cowner">Company Owner:</span>
@@ -31,7 +38,7 @@
         <span id="profit"></span><br><br>
         
         <label for="decision" class="decision">Decision :</label>
-        <select name="decision" onchange="storeDecision()" id="decision">
+        <select name="decision" onchange="storeDecision()" id="decision" class="box">
             <option value=""></option>
             <option value="Accept">Accept</option>
             <option value="Reject">Reject</option>
@@ -40,7 +47,7 @@
 
         <input type="button" value="submit" onclick="storeAllLoanData()" class="btn btn-primary btn-lg">
         <p id="finalMessage"  class="finalmessage"></p>
-    </p>
+    </div>
     <script src="js/script.js"></script>
 </body>
 

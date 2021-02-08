@@ -1,9 +1,4 @@
-body{
-    background-position:center ;
-}
-
 label{
-    position: relative;
     width: 240px;
     display: inline-block;
     font-weight: bold;
@@ -19,18 +14,26 @@ label{
     color: white;
     padding-top: 10px;
     margin: auto;
+    height: max-content;
     height: 520px;
     
 
 }
 
 h1{
+    text-align: center;
+}
+
+h3{
+margin-left: 50px;
+}
+
+.header{
     width: 800px;
     background-color:rgb(0,0,0,0.6);
     margin: auto;
     color: #FFFFFF;
     padding: 10px 0px 10px 0px;
-    text-align: center;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -65,4 +68,8 @@ h1{
 .terms{
     font-size: larger;
     color: black;
+}
+img{
+    margin-top: -150px;
+    margin-left:600px ;
 }

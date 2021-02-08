@@ -54,6 +54,7 @@ storeLoanData = () => {
   }
   
   const loanInfo = JSON.parse(localStorage.getItem("loanData"));
+  let interest, payment, profit;
   if (loanInfo) {
     document.getElementById("cName").innerHTML = loanInfo.companyName;
     document.getElementById("cOwner").innerHTML = loanInfo.companyOwner;
@@ -61,10 +62,10 @@ storeLoanData = () => {
     document.getElementById("borrowAmount").innerHTML = loanInfo.borrowAmount;
     document.getElementById("paymentTerms").innerHTML = loanInfo.paymentTerms;
   
-    const interest = (loanInfo.borrowAmount * loanInfo.paymentTerms) / (12 * 3);
-    const payment = parseInt(loanInfo.borrowAmount)
+    interest = (loanInfo.borrowAmount * loanInfo.paymentTerms) / (12 * 3);
+    payment = parseInt(loanInfo.borrowAmount)
       + interest;
-    const profit = payment - parseInt(loanInfo.borrowAmount);
+    profit = payment - parseInt(loanInfo.borrowAmount);
   
     if (interest) {
       document.getElementById("interest").innerHTML = interest.toFixed(2);
@@ -79,6 +80,7 @@ storeLoanData = () => {
   }
   
   storeAllLoanData = () => {
+      console.log(interest)
     let updateLoadObj = {
       ...loanInfo,
       interest: interest.toFixed(2),
