@@ -53,24 +53,26 @@ storeLoanData = () => {
       alert("Missing Information")
   }
   
-  const loanInfo = JSON.parse(localStorage.getItem("loanData"));
-  let interest, payment, profit;
-  if (loanInfo) {
-    document.getElementById("cName").innerHTML = loanInfo.companyName;
-    document.getElementById("cOwner").innerHTML = loanInfo.companyOwner;
-    document.getElementById("email").innerHTML = loanInfo.emailAddress;
-    document.getElementById("borrowAmount").innerHTML = loanInfo.borrowAmount;
-    document.getElementById("paymentTerms").innerHTML = loanInfo.paymentTerms;
-  
-    interest = (loanInfo.borrowAmount * loanInfo.paymentTerms) / (12 * 3);
-    payment = parseInt(loanInfo.borrowAmount)
-      + interest;
-    profit = payment - parseInt(loanInfo.borrowAmount);
-  
-    if (interest) {
-      document.getElementById("interest").innerHTML = interest.toFixed(2);
-      document.getElementById("payment").innerHTML = payment.toFixed(2);
-      document.getElementById("profit").innerHTML = profit.toFixed(2);
+  let interest, payment, profit, loanInfo;
+  getLoanData = () => {
+    loanInfo = JSON.parse(localStorage.getItem("loanData"));
+    if (loanInfo) {
+      document.getElementById("cName").innerHTML = loanInfo.companyName;
+      document.getElementById("cOwner").innerHTML = loanInfo.companyOwner;
+      document.getElementById("email").innerHTML = loanInfo.emailAddress;
+      document.getElementById("borrowAmount").innerHTML = loanInfo.borrowAmount;
+      document.getElementById("paymentTerms").innerHTML = loanInfo.paymentTerms;
+    
+      interest = (loanInfo.borrowAmount * loanInfo.paymentTerms) / (12 * 3);
+      payment = parseInt(loanInfo.borrowAmount)
+        + interest;
+      profit = payment - parseInt(loanInfo.borrowAmount);
+    
+      if (interest) {
+        document.getElementById("interest").innerHTML = interest.toFixed(2);
+        document.getElementById("payment").innerHTML = payment.toFixed(2);
+        document.getElementById("profit").innerHTML = profit.toFixed(2);
+      }
     }
   }
   
@@ -80,7 +82,6 @@ storeLoanData = () => {
   }
   
   storeAllLoanData = () => {
-      console.log(interest)
     let updateLoadObj = {
       ...loanInfo,
       interest: interest.toFixed(2),
