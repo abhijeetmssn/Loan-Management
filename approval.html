@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/style1.css ">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
-<body>
+<body onload="getLoanData()">
     <body style="background-image:url(images/bg.png); background-size: 200% 330%;"></div>
         <div class="header">
-            <h1>Apply For Loan</h1>
-            <h3>Assignment 1</h3>
-            <h3>Himanshi </h3>
-            <h3>Student id: 991592167</h3>
-            <img src="images/pic.jpg" alt="Trulli" width="150" height="150">
+            <h2>Apply For Loan</h2>
+            <h4>Assignment 1</h4>
+            <h4>Himanshi </h4>
+            <h4>Student id: 991592167</h4>
+            <img src="images/pic.jpg" alt="Trulli" width="100" height="100">
         </div>
     <div class="main">
         <span  class="cname">Company Name:</span>
@@ -35,7 +35,7 @@
         <span id="payment"></span><br><br>
 
         <span class="profit">Profit:</span>
-        <span id="profit"></span><br><br>
+        <span id="profit"></span><br>
         
         <label for="decision" class="decision">Decision :</label>
         <select name="decision" onchange="storeDecision()" id="decision" class="box">

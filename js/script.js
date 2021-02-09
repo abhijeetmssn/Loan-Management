@@ -16,34 +16,34 @@ storeLoanData = () => {
       borrowAmount: borrowAmount,
       paymentTerms: paymentTerms
     }
-    // if (companyName == "") {
-    //     alert(" Company Name must be filled out");
-    //     return false;
-    //      }
-    // if (companyOwner == "") {
-    //     alert(" Company Owner must be filled out");
-    //     return false;
-    //     } 
-    // if (emailAddress == "") {
-    //     alert(" Email Address must be filled out");
-    //     return false;
-    //     }
-    //     if (phoneNum.length > 6 && phoneNum.length < 11) {
-    //             alert(" Invalid");
-    //             return false;
-    //              }
-    //    if (annualSale == "") {
-    //             alert(" Annual Sale must be filled out");
-    //             return false;
-    //             } 
-    //     if (borrowAmount > '100') {
-    //             alert(" Borrow Amount must be Greater than 100$");
-    //             return false;
-    //             }   
-    //     if (paymentTerms >5 ) {
-    //                 alert(" Payment terms must be grater than 5 Months");
-    //                 return false;
-    //                 }             
+    if (companyName == "") {
+        alert(" Company Name must be filled out");
+        return false;
+         }
+    if (companyOwner == "") {
+        alert(" Company Owner must be filled out");
+        return false;
+        } 
+    if (emailAddress == "") {
+        alert(" Email Address must be filled out");
+        return false;
+        }
+        if (phoneNumber == "") {
+                alert(" Phone Number must be filled out");
+                return false;
+                 }
+       if (annualSale == "") {
+                alert(" Annual Sale must be filled out");
+                return false;
+                } 
+        if (borrowAmount == "") {
+                alert(" Borrow Amount must be filled out");
+                return false;
+                }   
+        if (paymentTerms == "" ) {
+                    alert(" Payment terms must be filled out");
+                    return false;
+                    }             
     localStorage.setItem("loanData", JSON.stringify((loanObject)));
   
     if (true) {
